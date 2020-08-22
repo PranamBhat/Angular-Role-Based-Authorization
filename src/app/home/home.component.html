@@ -1,10 +1,10 @@
 ﻿<div class="card mt-4">
-    <h4 class="card-header">Home</h4>
-    <div class="card-body">
-        <p>You're logged in with Angular 8 & JWT!!</p>
-        <p>Your role is: <strong>{{currentUser.role}}</strong>.</p>
+    <h4 class="card-header" style="text-align: center;">Home</h4>
+    <div class="card-body" style="text-align: center;">
+        <p>Log-in Successful ! Angular 8 - Role Based Authorization !!</p>
+        <p>Role : <strong>{{currentUser.role}}</strong></p>
         <p>This page can be accessed by <u>all authenticated users</u>.</p>
-        <p class="mb-1">Current user from secure api end point:</p>
+        <p class="mb-1">Current User From Secure API End Point:</p>
         <div *ngIf="loading" class="spinner-border spinner-border-sm"></div>
         <ul *ngIf="userFromApi">
             <li>{{userFromApi.firstName}} {{userFromApi.lastName}}</li>
